@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Check another",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Initiate new verification request"
+            }
+          }
+        ],
+        "send": {
+          "callback": "verification:restart"
+        }
+      }
+    ]
+  }
+]
